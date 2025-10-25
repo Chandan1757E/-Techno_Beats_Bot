@@ -5,7 +5,7 @@ header("Content-Security-Policy: default-src 'self'");
 header("X-Content-Type-Options: nosniff");
 header("X-Frame-Options: DENY");
 
-$botToken = '6990761692:AAFoy2zj2Q-jnt_SD9LIimjSXBh7jXyrW3M';
+$botToken = '8280138743:AAH2Ay6agC-SksUkfgc3yocjJYnDM09O_60';
 $apiUrl = "https://api.telegram.org/bot{$botToken}/";
 
 // File paths
