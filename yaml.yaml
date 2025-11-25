@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    ports:
+      - "22222:22222"
+    environment:
+      - PORT=22222
+      - TELEGRAM_BOT_TOKEN=your_bot_token
+      - TELEGRAM_CHAT_ID=your_chat_id
+      - HEALTH_CHECK_URL=https://www.youtube.com
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:22222"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
