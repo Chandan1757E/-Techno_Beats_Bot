@@ -1,0 +1,1 @@
+docker run -d -p 22222:22222 --name telegram-bot telegram-bot-app
