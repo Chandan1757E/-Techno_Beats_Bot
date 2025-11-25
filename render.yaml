@@ -6,9 +6,11 @@ services:
     buildCommand: npm install
     startCommand: npm start
     envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
       - key: TELEGRAM_BOT_TOKEN
-        value: your_telegram_bot_token_here
+        value: 8458876632:AAFYa27fG7rnAiH6BBSKOkmpviWcQbmFSO4
       - key: TELEGRAM_CHAT_ID
-        value: your_chat_id_here
+        value: 6576599231
       - key: HEALTH_CHECK_URL
         value: https://www.youtube.com
